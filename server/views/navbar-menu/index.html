@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- cdnjs cloudflare para el uscador -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <title>DiverEDU</title>
+</head>
+<body>
+   <nav>
+       <div class="logo">
+           <img src="imgs/Logo-DiverEdu2.png">
+           <div class="search">
+               <img src="./imgs/search.svg">
+               <input type="search" placeholder="Aprender en DiverEdu">
+           </div>
+
+           <!-- buscador -->
+           <!-- <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+              <input type="text" placeholder="Type here...">
+              <label for="check" class="icon">
+                <i class="fas fa-search"></i>
+              </label>
+            </div>
+          </div> -->
+          
+       </div>
+       <div class="options">
+           <img src="imgs/video.svg">
+           <img src="imgs/images.svg">
+           <img src="imgs/group.svg">
+           <img src="imgs/books.svg">
+           <img src="imgs/games.svg">
+       </div>
+       <div class="options-two">
+           <div class="profile">
+               <img src="imgs/JS-pic.jpg">
+               <p>JairoProDev</p>
+           </div>
+            <img src="imgs/menu.svg">
+            <img src="imgs/messenger.svg">
+            <img src="imgs/notifications.svg">
+            <img src="imgs/menu-desplegable.svg">
+       </div>
+   </nav>
+   <div class="grid-container">
+
+<div class="col1"> <!--columna 1 izquierda-->
+
+    <!-- sidebar -->
+    <iframe id="sidebar" src="..\sidebar\index.html" frameborder="0"></iframe>
+
+</div>
+
+<div class="col2"> <!--columna 2 central-->
+
+    <!-- mostrando los archivos subidos -->
+    <h2>¿Qué quieres aprender hoy?</h2>
+    <div id="fileList">
+        <video >
+            <!-- <source src="./uploads/${video.name}"> -->
+            <source src="server\uploads\1675182190635-MINGW64__c_Users_Usuario_Desktop_Edugow-Cachimboz-Landing-Page 2022-10-30 06-30-35.mp4">
+        </video>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+
+<!-- botón enseñar -->
+<button id="showFormBtn" class="fixed-button">
+    <span class="text">+</span>
+    <span class="hover-text"> Enseñar </span>
+</button>
+<div class="modal-box">
+<div class="modal" id="formModal">
+  <div class="modal-content">
+    <span class="closeBtn">&times;</span>
+
+<!-- formulario -->
+    <div class="form">
+            <form action="/archivos" method="post" enctype="multipart/form-data" target="_blank">
+            <label for="title">Título</label>
+            <input type="text" id="title" >
+            <label for="description">Descripción</label>
+            <textarea id="description" rows="5" ></textarea>
+            <label for="category">Categoría</label>
+            <select id="category" >
+                <option value="" disabled selected>Seleccionar Categoría</option>
+                <option value="clases">Clases</option>
+                <option value="cursos">Cursos</option>
+                <option value="videos">Vídeos</option>
+                <option value="archivos">Archivos</option>
+                <option value="recursos">Recursos Educativos</option>
+            </select>
+            <label for="file">Archivo</label>
+            <input type="file" name="clase" id="file" value="Subir Recurso">
+            <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<!-- contenido -->
+<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!--columna 2 central-->
+<div class="col3">
+    <iframe src="../Comments/comments.html" frameborder="0" scrolling="no" style="width: 100%; height: 100%;"></iframe>
+</div><!--columna 3 derecha--> 
+</div> <!--container-->
+<script src="index.js"></script>
+</body>
+</html>

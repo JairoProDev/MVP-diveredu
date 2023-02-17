@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #18191a;
+}
+
+nav {
+    width: 100%;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #242526;
+    border-bottom: thin solid #393a3b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 41px;
+    border-radius: 50%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.search {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #3a3b3c;
+    border-radius: 1.5rem;
+}
+
+.search img {
+    padding: 0 .5rem;
+}
+
+.search > input {
+    height: 40px;
+    border-radius: 1.5rem;
+    background-color: #3a3b3c;
+    outline: none;
+    border: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.search > input::placeholder {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #9fa1a7;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.options img {
+    padding: .7vw 3vw;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.options img:hover {
+    background-color: #3a3b3c;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    color: #9fa1a7;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+.profile:hover {
+    background-color: #3a3b3c;
+    border-radius: 1.3rem;
+}
+
+.profile > img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.profile > p {
+    margin: 0 1rem;
+}
+
+.options-two {
+    display: flex;
+    align-items: center;
+}
+
+.options-two > img {
+    padding: .7vw;
+    margin: 0 .2vw;
+    background-color: #3a3b3c;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.options-two > img:hover {
+    background-color: #494a4b;
+}
+
+@media (max-width:1024px) {
+    .search > input {
+        display: none;
+    }
+}
+
+/* box-searcher: buscador nuevo animado */
+
+
+/* grid columns */
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 16% 60% 24%;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: auto;
+  }
+  
+  .col1 {
+    grid-column: 1;
+    background-color: #494a4b;
+  }
+
+  .col2 {
+    grid-column: 2;
+    background-color:#242526;
+    padding: 10px;
+  }
+  
+  .col3 {
+    grid-column: 3;
+    background-color: #393a3b;
+    padding: 10px;
+  }
+/* iframes */
+iframe {
+  width: 100%;
+  height: 99%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+/* botón */
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #393a3b;
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+}
+
+.fixed-button .hover-text {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #393a3b;
+  color: #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.fixed-button:hover {
+  width: 80px;
+  height: 50px;
+  font-size: 36px;
+}
+
+.fixed-button:hover .text {
+  display: none;
+}
+
+.fixed-button:hover .hover-text {
+  display: flex;
+}
+
+/* botón form */
+#showFormBtn{
+    background: #393a3b;
+    cursor: pointer;
+    border: none;
+    margin: 15px 15px;
+    padding: 16px 32px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+/* #showFormBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blu, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    }
+    @keyframes glowing {
+        0% {
+        background-position: 0 0;
+        }
+        50% {
+        background-position: 400% 0;
+        }
+        100% {
+        background-position: 0 0;
+        }
+        } */
+
+/* botón form */
+.modal-box {
+    display: felx;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #888;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #3a3b3c;
+    margin: 15% auto; /* 15% from the top and centered */
+    margin-top: 10%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+  
+  .closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeBtn:hover,
+  .closeBtn:focus {
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* FORMULARIO */
+.form {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  /* input[type="text"], input[type="file"] { */
+    input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 1px solid gray;
+  }
+
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:#1d1b31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
