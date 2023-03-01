@@ -7,7 +7,7 @@
 🫱🏼‍🫲🏾Ayúdenme a llegar a las personas indicadas porfa🙏🏻
 
 Les cuento⬇️
-🧵1/8
+🧵1/10
 ---
 🤔El problema que intento resolver: 
 📉Es la pobreza... a partir de la desigualdad por falta de oportunidades.
@@ -79,8 +79,6 @@ Una plataforma pedagógica:
 🚀Hagamos de la educación una herramienta para combatir la pobreza y la desigualdad!💪💪🏻
 
 🧑🏻‍💻¡Creemos soluciones más accesibles y efectivas!🧩
-
-🙏🏻RT & DM📩
 
 🧵10/10
 #StartupEdTech #InnovaciónEducativa #EducaciónParaTodos #LuchaContraLaPobreza #EducaciónAccesible #EducaciónEfectiva
