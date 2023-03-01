@@ -1,47 +1,86 @@
-abrimos git bash
-creamos una carpeta con mkdir llamada MVP-DIVEREDU
-dentro creamos una subcarpeta llamda server
+# MVP-DiverEdu
 
-inicializamos npm para crear un package.json
-instalamos express
-instalamos mongoose
+🧑🏻‍💻Estamos construyendo una: 🚀Startup Ed-Tech🎓
+🙏🏻¡Y necesito vuestra ayuda!
 
-creamos una cuenta en mongodb atlas
-creamos un cluster M0 gratuito en servidores compartidos
-en mongodb conectamos nuestra dirección ip
-damos a conectar nuestra aplicación y nos da un código para pegar en db.js
+🧠Toda opinión, aporte o sugerencia es bienvenida.
+🫱🏼‍🫲🏾Ayúdenme a llegar a las personas indicadas porfa🙏🏻
 
-creamos una carpeta llamada dv.js dentro de server
-le cambiamos la palabra password del código por nuestra contraseña de usuario en el cluster de mongo
+Les cuento⬇️
+🧵1/8
 
-creamos un archivo: server,js
-traemos el módulo express
-lo asignamos a una constante app
-a través del método get denuestra constante creada(app) respondemos con un mensaje de bienbenida en la ruta root (/)
+🤔El problema que intento resolver: 
+📉Es la pobreza... a partir de la desigualdad por falta de oportunidades.
 
-definimos en que puerto escuchará nuestra aplicación
-mandamos un mensaje por consola para ver que funciona
+📊Tengo la tesis de que se puede solucionar la mayoría de los problemas de la sociedad si resolvemos eso: (pobreza y desigualdad)
 
-creamos una carpeta (uploads) donde se van a guardar los archivos
-otra carpeta views donde va estar el index.html
+🧵2/10
 
-dentro del index.html creamos la estructura báasica
-creamos un formulario cuya action dirigira a la ruta files con un método de post, para que los usuarios suban los archivos desde la web
+🎯Y llegué a la conclusión de que el mejor camino es la educación.
+👀Aunque esta tiene muchísimos problemas por resolver.
 
-en el server,js utilizamos nuestra constante app otra vez, pero ahora usando el método post para crear una nueva ruta ("/files")
-y esto es lo que se guardará en la carpeta uploads
+💡Pero: Y si la hiciéramos mucho más accesible y realmente efectiva: (eficiente y eficaz) 🤔
 
-el formulario del index.html debe tener un atribuo llamado enctype el cual tiene tres valores: el por defecto, el para texto y el para multimedia que se llama: "multipart/form-data" 
+🧵3/10
 
-dentro del formulario creamos dos inputs para cargar el archivo y para enviar el formulario
-el que es para cargar el archivo es de tipo file y el input para enviar será de tipo submit y le ponemos es atributo value para decir que texto de mostrará en ese botón
+🎯Lograríamos que las personas sin importar su condición socioeconómica ni lugar de procedencia.
 
-creamos bien la respuesta que se mostrará en la ruta raiz:
-utilizaremos la variable __dirname y en vez de enviar una simple respuesta, enviaremos el archivo con res.sendFile(__dirname + '/views/index.html'
-la variable __dirname nos lleva a la ruta inicial de las carpetas y ya a partir de alí le indicamos por donde tiene que ir, en este caso queremos que muestre el html que está dentro de la carpeta views.
+🏅Puedan estar mejor preparadas para acceder a mejores oportunidades.
 
-instalamos multer
-requerimos el módulo
-queremos que multer lea el archivo
-convertimos en funión a la constante dinde estaba guardada el módulo multer
-crmos la constante upload y le asignamos la anterior constante multer pero convirtiendola o usando su función para darle ciertas configuraciones 
+🤏🏻Así lograr salir de la pobreza y tener una mejor calidad de vida para sí, su familia y la sociedad.
+
+🧵4/10
+
+🤔¿Qué es lo más accesible que puede ser?
+
+Cómo un YouTube Educativo.
+💸Es un gran modelo de negocio el de la economía creativa.
+
+💱Podemos hacer que la educación sea gratuita y aun así rentable y autosostenible para quienes enseñan.
+
+🧵5/10
+
+💡La idea es esta:
+
+🫱🏼‍🫲🏾Ayudar a que educadores y estudiantes puedan conectar entre sí.
+
+🌐En un espacio que optimice el proceso de enseñanza y aprendizaje.
+
+🚀Para crear un nuevo sistema educativo que sea mucho más accesible y que genere mejores resultados.
+
+🧵6/10
+
+✖️No se trata de competir con el sistema educativo actual
+
+🫱🏼‍🫲🏾Sino de complementarlo: darle superpoderes Tech que hagan que evolucione.
+
+💭Imaginen sacar lo mejor de la tecnología y experiencia de las demás industrias y aplicarlo en educación.
+
+🧵7/10
+
+Construir una Red Social Gamificada
+Lograr que la educación sea:
+🎇Personalizada
+🎮Interactiva
+🎬Entretenida
+
+🧵8/10
+
+Una plataforma pedagógica:
+
+🤖Que de herramientas a los educadores para enseñar.
+
+🧩Qué optimice el proceso de aprendizaje de los estudiantes.
+
+💙Dónde cualquiera que quiera mejorar la educación: tenga un espacio, incentivos y herramientas para lograrlo.
+
+🧵9/10
+
+🚀Hagamos de la educación una herramienta para combatir la pobreza y la desigualdad!💪💪🏻
+
+🧑🏻‍💻¡Creemos soluciones más accesibles y efectivas!🧩
+
+🙏🏻RT & DM📩
+
+🧵10/10
+#StartupEdTech #InnovaciónEducativa #EducaciónParaTodos #LuchaContraLaPobreza #EducaciónAccesible #EducaciónEfectiva
