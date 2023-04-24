@@ -8,7 +8,7 @@ const connectDB = async () => {
   // Se utiliza mongoose.connect para conectarse a la base de datos utilizando la cadena de conexión y las opciones necesarias
   await mongoose.connect(URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: false,
     useCreateIndex: true,
     useFindAndModify: false
   });
@@ -25,13 +25,6 @@ mongoose.connection.on('connected', () => {
 // manejador de eventos en caso de que ocurra un error en la conexión:
 mongoose.connection.on('error', (err) => {
     console.log(`Mongoose connection error: ${err}`);
-});
-
-
-// crear un nuevo usuario y guardarlo en la colección:
-const usuario = new Usuario({
-    nombre: "Jairo",
-    edad: 25
 });
 
 usuario.save((error) => {

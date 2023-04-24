@@ -1,12 +1,9 @@
-// Importando módulos
 const express = require('express');
 const fs = require('fs'); // Módulo para leer archivos del sistema de archivos
 const multer = require('multer'); // Módulo para gestionar la subida de archivos
 const cors = require('cors'); // Módulo para habilitar CORS en Express
 const path = require('path'); // Módulo para trabajar con rutas de archivos
-
-//creando instancia de la aplicación express
-const app = express();
+const app = express(); //creando instancia de la aplicación express
 
 //cargar la configuración de las variables de entorno
 const dotenv = require('dotenv') // Módulo para cargar variables de entorno desde un archivo .env
@@ -34,10 +31,22 @@ const upload =multer({
     storage: storage,
 })
 
+app.set('view wngine', 'ejs');
+
 // Ruta principal de la aplicación, sirve el archivo index.html desde el directorio 'views/navbar-menu'
 app.get('/', (req, res) => {
     res.sendFile(__dirname +"/views/navbar-menu/index.html");
 });
+
+app.get("/login",(req,res)=>{
+    //mostrar el formulario de login
+    res.render("login")
+})
+
+app.post("/login", (req, res) => {
+    //recibir credenciales e iniciar sesión
+
+})
 
 // Middleware para servir archivos estáticos desde el directorio 'views'
 app.use(express.static(path.join(__dirname, 'views')));
@@ -58,10 +67,6 @@ app.get('/archivos', (req, res) => {
     });
 });
 
-// La app de Express escucha en el puerto 8080
+
 app.listen(8080, () => console.log('listening on port 8080'));
 
-
-
-// const connectDB = require('./config/db');
-// connectDB();
